@@ -913,13 +913,24 @@ button {
   .hero-left {
     text-align: center;
   }
+
+  .problem-grid,
+  .features-grid,
+  .stats-container,
+  .testimonials-grid {
+    gap: 1rem;
+  }
+
+  .hero-right img,
+  .solution-image-wrapper img {
+    max-width: 100%;
+  }
 }
 
-/* ========================= Mobile TTL Fix ========================= */
 @media (max-width: 768px) {
   html, body {
+    overflow-x: hidden;    
     width: 100%;
-    overflow-x: hidden;
   }
 
   body > * {
@@ -928,7 +939,6 @@ button {
     margin-right: auto !important;
   }
 
-  
   .container,
   .hero-container,
   .solution-content,
@@ -939,32 +949,16 @@ button {
   .partner-grid,
   .testimonials-grid,
   .cta-inner {
-    width: 100% !important;
+    width: 90% !important;      
     max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    gap: 1rem !important; 
   }
 
-  .problem-card,
-  .feature-card,
-  .stat-item,
-  .testimonial-card {
-    min-width: 0 !important;
-    width: 100% !important;
-  }
-
- 
-  .hero-right img,
-  .solution-image-wrapper img,
-  .partner-item img,
-  .logo-item img {
+  
+  img, video, iframe {
     max-width: 100%;
     height: auto;
   }
-
-  .hero-left,
-  .solution-text {
-    text-align: center;
-  }
 }
+
