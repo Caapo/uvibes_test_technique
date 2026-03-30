@@ -815,9 +815,9 @@ button {
   display: flex;
   justify-content: center;
   min-width: 300px;
-  padding-left: 1rem;  
-  padding-right: 1rem; 
-  box-sizing: border-box;
+}
+
+.cta-image-wrapper img {
   max-width: 90%;
   height: auto;
 }
