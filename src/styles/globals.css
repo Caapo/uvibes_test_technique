@@ -798,6 +798,7 @@ button {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  padding: 0 1rem;  
 }
 
 .cta-title {
@@ -818,7 +819,7 @@ button {
 }
 
 .cta-image-wrapper img {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
 }
 
