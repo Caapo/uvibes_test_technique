@@ -32,52 +32,6 @@ img {
   border-radius: 15px;
 }
 
-@media (max-width: 768px) {
-  .hero-container,
-  .solution-content,
-  .problem-grid,
-  .features-grid {
-    justify-content: center;
-  }
-  .hero-left {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;    
-    width: 100%;
-  }
-
-  body > * {
-    max-width: 100vw !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .container,
-  .hero-container,
-  .solution-content,
-  .problem-grid,
-  .features-grid,
-  .stats-container,
-  .logos-track,
-  .partner-grid,
-  .testimonials-grid,
-  .cta-inner {
-    width: 90% !important;      
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  
-  img, video, iframe {
-    max-width: 100%;
-    height: auto;
-  }
-}
 
 
 /* ========================= Button ========================= */
@@ -941,5 +895,71 @@ button {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+/* =========================== Responsive (Fix mobile) ===========================   */
+
+
+
+@media (max-width: 768px) {
+  .hero-container,
+  .solution-content,
+  .problem-grid,
+  .features-grid {
+    justify-content: center;
+  }
+  .hero-left {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;    
+    width: 100%;
+  }
+
+  body > * {
+    max-width: 100vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .container,
+  .hero-container,
+  .solution-content,
+  .problem-grid,
+  .features-grid,
+  .stats-container,
+  .logos-track,
+  .partner-grid,
+  .testimonials-grid,
+  .cta-inner {
+    width: 90% !important;      
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  .testimonial-card {
+    min-width: 0;       /* permet au bloc de se réduire */
+    width: 100%;        /* occupe toute la largeur disponible */
   }
 }
