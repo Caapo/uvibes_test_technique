@@ -32,6 +32,22 @@ img {
   border-radius: 15px;
 }
 
+@media (max-width: 768px) {
+  .hero-container,
+  .solution-content,
+  .problem-grid,
+  .features-grid {
+    justify-content: center;
+  }
+  .hero-left {
+    text-align: center;
+  }
+}
+
+
+
+/* ========================= Button ========================= */
+
 button {
   cursor: pointer;
   border: none;
@@ -55,7 +71,6 @@ button {
   overflow: hidden;
 }
 
-/* ========================= Button ========================= */
 
 .btn-primary::after {
   content: '';
