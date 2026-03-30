@@ -276,11 +276,13 @@ button {
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
+  justify-content: flex-start;
 }
 
 .hero-left {
-  flex: 1;
-  min-width: 320px;
+  flex: 1 1 300px;
+  min-width: 250px;
+  text-align: left;
 }
 
 .hero-badge {
@@ -324,17 +326,19 @@ button {
 
 /* Hero Right */
 .hero-right {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   justify-content: center;
+  align-items: center; 
   position: relative;
+  max-width: 100%;
 }
 
 .hero-right img {
   display: block;
-  width: 70%; 
-  max-width: 600px;
-  height: 450px;
+  width: 100%;      
+  max-width: 600px; 
+  height: auto;  
   margin: 0 auto;
   animation: float 6s ease-in-out infinite;
 }
