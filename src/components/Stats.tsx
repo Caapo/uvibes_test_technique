@@ -30,10 +30,10 @@ export default function Stats({ stats }: StatsProps) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // évite que ça rejoue
+          observer.disconnect();
         }
       },
-      { threshold: 0.3 } // déclenche quand 30% visible
+      { threshold: 0.3 }
     );
 
     if (ref.current) observer.observe(ref.current);
